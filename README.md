@@ -119,11 +119,23 @@ Internet → Internet Gateway → Application Load Balancer → Auto Scaling Gro
 
 ---
 
-## 🔄 High Availability & Fault Tolerance
+## 🔄 High Availability Strategy
 
-* Multi-AZ deployment ensures availability even if one AZ fails
-* ASG automatically replaces failed instances
-* ALB routes traffic only to healthy instances
+**1. Multi-AZ Deployment**
+- Runs in multiple availability zones  
+- Failure of one zone does not stop system  
+
+**2. Load Balancing**
+- Distributes traffic evenly  
+
+**3. Health Checks**
+- Sends traffic only to healthy instances  
+
+**4. Auto Healing**
+- Automatically replaces failed servers  
+
+**5. No Single Point of Failure**
+- System continues even if one component fails  
 
 ---
 
